@@ -74,9 +74,12 @@ class EmpleadosController extends Controller
      * @param  \App\Models\Empleados  $empleados
      * @return \Illuminate\Http\Response
      */
-    public function edit(Empleados $empleados)
+    public function edit($id)
     {
         //
+        $empleado= Empleados::findOrFail($id);
+
+        return view('empleados.empleadosEdit',compact('empleado'));
     }
 
     /**
