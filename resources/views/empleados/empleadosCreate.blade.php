@@ -30,4 +30,7 @@ Seccion para crear empleaods
 
 
 <input type="submit" value="Agregar">
+
+<a href="{{ url('empleados') }}">Regresar</a>
+
 </form>

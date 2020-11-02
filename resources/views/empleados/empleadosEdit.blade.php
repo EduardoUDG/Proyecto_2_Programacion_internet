@@ -32,6 +32,7 @@ Seccion para editar empleados
 <br/>
 <input type="file" name="Foto" id="Foto" value="">
 <br/>
-<input type="submit" value="Editar">
+<input type="submit" value="Modificar">
+<a href="{{ url('empleados') }}">Regresar</a>
 
 </form>
