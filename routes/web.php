@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmpleadosController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +26,4 @@ Route::resource('empleados', EmpleadosController::class)->middleware('auth');
 
 Auth::routes(['register'=>false,'reset'=>false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
