@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 // Metodo para incluir las rutas hacia el controlador
-Route::resource('empleados', EmpleadosController::class);
+Route::resource('empleados', EmpleadosController::class)->middleware('auth');
 
 
 
