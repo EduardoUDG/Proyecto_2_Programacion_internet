@@ -121,7 +121,7 @@ class EmpleadosController extends Controller
         if($request->hasFile('Foto')){
 
             $campos+=['Foto' => 'required|max:10000|mimes:jpeg,png,jpg'];
-            
+
         }
 
         // Mensaje de alerta formulario
