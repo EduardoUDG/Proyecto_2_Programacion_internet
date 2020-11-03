@@ -45,11 +45,11 @@ class EmpleadosController extends Controller
         //
         // Validacion sencilla mediante laravel
         $campos=[
-            'Nombre'=>'required|string|max:100',
+            'Nombre' => 'required|string|max:100',
             'ApellidoPaterno' => 'required|string|max:100',
             'ApellidoMaterno' => 'required|string|max:100',
             'Correo' => 'required|email',
-            'Foto' => 'required|max:10000|mines:jpeg,png,jpg'
+            'Foto' => 'required|max:10000|mimes:jpeg,png,jpg'
         ];
         // Mensaje de alerta formulario
         // si en el formulaio encuentra un required que no se ha insertado
