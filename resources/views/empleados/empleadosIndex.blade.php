@@ -3,9 +3,15 @@
 @section('content')
 
 <div class="container">
-    @if (Session::has('Mensaje')){{
-        Session::get('Mensaje')
-    }}
+    @if (Session::has('Mensaje'))
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ Session::get('Mensaje') }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     @endif
 
     <a href="{{ url('empleados/create') }}" class="btn btn-success">Agregar Empleado</a>
@@ -52,6 +58,9 @@
         </tbody>
 
     </table>
+
+    {{ $empleados->links() }}
+
 </div>
 
 @endsection
