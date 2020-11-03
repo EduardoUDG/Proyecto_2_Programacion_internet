@@ -43,7 +43,23 @@ class EmpleadosController extends Controller
     public function store(Request $request)
     {
         //
-        //$datosEmpleado=request()->all();
+        // Validacion sencilla mediante laravel
+        $campos=[
+            'Nombre'=>'required|string|max:100',
+            'ApellidoPaterno' => 'required|string|max:100',
+            'ApellidoMaterno' => 'required|string|max:100',
+            'Correo' => 'required|email',
+            'Foto' => 'required|max:10000|mines:jpeg,png,jpg'
+        ];
+        // Mensaje de alerta formulario
+        // si en el formulaio encuentra un required que no se ha insertado
+        // un elemento valido, insertara el atributo del required con el texto derecho
+        $Mensaje=["required"=>'El :attribute es requerido'];
+
+        // Con este metodo validamos toda la informacion anterior ↑
+        $this->validate($request,$campos,$Mensaje);
+
+
 
         $datosEmpleado=request()->except('_token');
 
