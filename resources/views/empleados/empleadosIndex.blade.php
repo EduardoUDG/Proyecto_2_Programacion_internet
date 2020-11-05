@@ -20,8 +20,8 @@
         </h2>
     </div>
 
-    <table class="table table-light table-hover pt-1">
-        <thead class="thead-light">
+    <table class="table table-light table-hover pt-1 shadow">
+        <thead class="thead-light ">
             <tr>
                 <th>N°</th>
                 <th>Foto</th>
@@ -42,7 +42,7 @@
                 <td>{{ $empleado->Correo }}</td>
                 <td>
 
-                    <a class="btn btn-info" href="{{ url('/empleados/'.$empleado->id.'/edit') }}">
+                    <a class="btn btn-success" href="{{ url('/empleados/'.$empleado->id.'/edit') }}">
                     Editar
                     </a>
 
