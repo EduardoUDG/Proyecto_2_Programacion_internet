@@ -14,13 +14,16 @@
 
     @endif
 
-    <a href="{{ url('empleados/create') }}" class="btn btn-success">Agregar Empleado</a>
-    <br/>
-    <br/>
-    <table class="table table-light table-hover">
+    <div class="d-inline">
+        <h2>Empleados
+            <a href="{{ url('empleados/create') }}" class="btn btn-success">Agregar Empleado</a>
+        </h2>
+    </div>
+
+    <table class="table table-light table-hover pt-1">
         <thead class="thead-light">
             <tr>
-                <th>ID</th>
+                <th>N°</th>
                 <th>Foto</th>
                 <th>Nombre</th>
                 <th>Correo</th>
@@ -39,7 +42,7 @@
                 <td>{{ $empleado->Correo }}</td>
                 <td>
 
-                    <a class="btn btn-warning" href="{{ url('/empleados/'.$empleado->id.'/edit') }}">
+                    <a class="btn btn-info" href="{{ url('/empleados/'.$empleado->id.'/edit') }}">
                     Editar
                     </a>
 
@@ -59,7 +62,12 @@
 
     </table>
 
-    {{ $empleados->links() }}
+
+    <hr>
+    <div class="d-flex justify-content-center">
+        {{ $empleados->links() }}
+    </div>
+
 
 </div>
 
