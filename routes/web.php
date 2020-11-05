@@ -20,10 +20,10 @@ Route::get('/', function () {
 });
 
 // Metodo para incluir las rutas hacia el controlador
-Route::resource('empleados', EmpleadosController::class)->middleware('auth');
+Route::resource('empleados', EmpleadosController::class);
 
 
 
-Auth::routes(['register'=>false,'reset'=>false]);
+Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
