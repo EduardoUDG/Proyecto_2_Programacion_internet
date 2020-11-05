@@ -16,7 +16,9 @@
 
     <div class="d-inline">
         <h2>Empleados
-            <a href="{{ url('empleados/create') }}" class="btn btn-success">Agregar Empleado</a>
+            <a href="{{ url('empleados/create') }}" class="btn btn-success">
+                <i class="fas fa-user-plus"></i> Agregar Empleado
+            </a>
         </h2>
     </div>
 
@@ -43,7 +45,7 @@
                 <td>
 
                     <a class="btn btn-success" href="{{ url('/empleados/'.$empleado->id.'/edit') }}">
-                    Editar
+                        <i class="far fa-edit"></i> Editar
                     </a>
 
 
@@ -51,7 +53,9 @@
                 <form action="{{ url('/empleados/'.$empleado->id) }}" method="post" class="d-inline">
                     {{ csrf_field() }}
                     {{ method_field('DELETE') }}
-                    <button type="submit" class="btn btn-danger" onclick="return confirm('¿Borrar?');">Borrar</button>
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('¿Borrar?');">
+                        <i class="far fa-trash-alt"></i> Borrar
+                    </button>
                 </form>
 
 
