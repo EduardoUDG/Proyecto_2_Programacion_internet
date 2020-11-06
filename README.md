@@ -5,7 +5,7 @@
 
 Este es un proyecto ejemplo para el desarrollo de un CRUD utilizando Laravel (v8).
 
-## Instalacion
+## Instalación
 
 1. Clonar el repositorio `https://github.com/EduardoUDG/Proyecto_2_Programacion_internet.git`
 2. Cambiarse al directorio del proyecto
