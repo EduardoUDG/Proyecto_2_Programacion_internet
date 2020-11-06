@@ -7,7 +7,7 @@ Este es un proyecto ejemplo para el desarrollo de un CRUD utilizando Laravel (v8
 
 ## Instalacion
 
-1. Clonar el repositorio `https://github.com/EduardoUDG/Proyecto_2_Programacion_internet/edit/main/README.md`
+1. Clonar el repositorio `https://github.com/EduardoUDG/Proyecto_2_Programacion_internet.git`
 2. Cambiarse al directorio del proyecto
 3. Usar el comando `composer install`
 4. Crear archivo de variables de entorno: cp .env.example .env
