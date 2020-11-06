@@ -20,6 +20,6 @@ Este es un proyecto ejemplo para el desarrollo de un CRUD utilizando Laravel (v8
 
 ### Nota
 
-Si en tu servidor local, cambiaste el puerto del servicor local, usa dos puntos y el numero del puerto
+Si en tu servidor local, cambiaste el puerto, usa dos puntos y el numero del puerto
 ejemplo:
 `localhost:8080/Proyecto_2_Programacion_internet/public`
