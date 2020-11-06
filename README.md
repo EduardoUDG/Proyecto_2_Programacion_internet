@@ -3,7 +3,7 @@
 ---
 ## Laravel
 
-Este es un proyecto ejemplo para el desarrollo de un CRUD utilizando Laravel (v8).
+Este es un proyecto de ejemplo para el desarrollo de un CRUD utilizando Laravel (v8).
 
 ## Instalación
 
